@@ -8,7 +8,7 @@ If (!$Episode) {
     exit
 }
 $PodcastTemplateDirectory = "$PodcastRoot\Office365Podden.template\"
-$fileName = “$podcastTemplateDirectory\TemplateProject.nhsx”;
+$fileName = "$podcastTemplateDirectory\TemplateProject.nhsx";
 $xmlDoc = [System.Xml.XmlDocument](Get-Content $fileName)
 $EpisodePath = "$PodcastRoot" + "episoder\" 
 $EpisodeFilePath = "$EpisodePath\$episode Files"
